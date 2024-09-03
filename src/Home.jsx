@@ -1,3 +1,4 @@
+import BreakingNews from "./BreakingNews";
 import Header from "./Header";
 import LeftNav from "./LeftNav";
 import Navbar from "./Navbar";
@@ -7,6 +8,7 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
+      <BreakingNews></BreakingNews>
       <Navbar></Navbar>
       <h2 className="font-poppins font-semibold">This is home</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
