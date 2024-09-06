@@ -7,6 +7,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
 import AuthProvider from "./AuthProvider";
+import Center from "./Center";
 const router = createBrowserRouter([
   {
     path: "/",
