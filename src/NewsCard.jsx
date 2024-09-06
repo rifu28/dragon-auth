@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const NewsCard = ({ news }) => {
-  const { title, thumbnail_url, details } = news;
+  const { title, thumbnail_url, details, _id } = news;
   return (
     <div className="max-w-full flex flex-col mx-auto bg-white border border-gray-200 rounded-2xl shadow mb-5 dark:bg-gray-800 dark:border-gray-700 my-2">
       <a href="#">
@@ -17,7 +17,9 @@ const NewsCard = ({ news }) => {
           <p>
             {details.slice(0, 200)}{" "}
             <span>
-              <Link className="text-blue-700 font-semibold">...Read More</Link>
+              <Link to={`/news/${_id}`} className="text-blue-700 font-semibold">
+                ...Read More
+              </Link>
             </span>
           </p>
         ) : (

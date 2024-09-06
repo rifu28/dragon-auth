@@ -8,6 +8,7 @@ import Login from "./Login";
 import Register from "./Register";
 import AuthProvider from "./AuthProvider";
 import Center from "./Center";
+import News from "./News";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/news/:id",
+        element: <News></News>,
       },
       {
         path: "/register",
