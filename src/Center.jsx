@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NewsCard from "./NewsCard";
 
 const Center = () => {
   const [news, setNews] = useState([]);
@@ -9,7 +10,9 @@ const Center = () => {
   }, []);
   return (
     <div className="py-2">
-      <h2 className="text-2xl font-semibold">Center position :{news.length}</h2>
+      {news.map((aNews) => (
+        <NewsCard key={aNews._id} news={aNews}></NewsCard>
+      ))}
     </div>
   );
 };
