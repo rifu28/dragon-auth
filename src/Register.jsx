@@ -93,7 +93,7 @@ const Register = () => {
             <h2 className="font-semibold mt-3 text-center">
               Already have an account ?
               <Link to="/login">
-                <span className="text-blue-600"> Login</span>
+                <span className="text-blue-600"> Register</span>
               </Link>
             </h2>
           </div>

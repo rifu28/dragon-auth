@@ -9,6 +9,7 @@ import Register from "./Register";
 import AuthProvider from "./AuthProvider";
 import Center from "./Center";
 import News from "./News";
+import PrivateRoute from "./PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/news/:id",
-        element: <News></News>,
+        element: (
+          <PrivateRoute>
+            <News></News>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/register",
