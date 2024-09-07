@@ -12,7 +12,7 @@ const News = () => {
       <Navbar></Navbar>
       <div className="grid grid-cols-4">
         <div className="col-span-3">
-          <h2 className="text-5xl">News Details of {id}</h2>
+          <h2 className="text-5xl">News Details of the section {id}</h2>
         </div>
         <div>
           <RightNav></RightNav>
