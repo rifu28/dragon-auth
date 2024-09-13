@@ -59,7 +59,7 @@ const Login = () => {
               Login
             </button>
             <h2 className="font-semibold mt-3 text-center">
-              Don't have an account ? Please
+              Don't have an account ?
               <Link to="/register">
                 <span className="text-green-600"> Register</span>
               </Link>
