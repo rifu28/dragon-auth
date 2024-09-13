@@ -26,7 +26,7 @@ const Login = () => {
       <Navbar></Navbar>
       <div className="w-1/2 mx-auto mt-10 bg-gray-50 p-3">
         <h2 className="text-2xl font-semibold text-center mb-5 mt-3">
-          Login Your Account
+          Login Your Account Here
         </h2>
         <hr />
         <form onSubmit={handleLogin} className="card-body">

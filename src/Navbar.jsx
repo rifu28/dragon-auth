@@ -22,7 +22,7 @@ const Navbar = () => {
           }
           to="/"
         >
-          Homeee
+          Home
         </NavLink>
       </li>
 
